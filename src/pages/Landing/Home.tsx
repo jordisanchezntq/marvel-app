@@ -40,7 +40,7 @@ const Home: React.FC = () => {
     }
   }
 
-  console.log(characterSel)
+  console.log(info)
 
   return (
     <IonPage>
@@ -60,13 +60,13 @@ const Home: React.FC = () => {
             </IonToolbar>
           </IonHeader>
 
-          <IonRow className="ion-padding-top">
+          <IonRow className="ion-padding-top ion-justify-content-center">
             <IonText>
               Select your character
             </IonText>
           </IonRow>
 
-          <IonRow className="ion-padding-top">
+          <IonRow className="ion-padding-top ion-justify-content-center">
             <IonSelect
               value={characterSel}
               onIonChange={(e: any) => setCharacterSel(e.detail.value)}
