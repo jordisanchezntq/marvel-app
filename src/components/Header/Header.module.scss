@@ -1,0 +1,17 @@
+.headerBody {
+    background: var(--ion-color-light);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    ion-title {
+        color: var(--ion-color-danger);
+        font-size: 40px;
+    }
+
+    ion-img {
+        width: 80px;
+    }
+}
