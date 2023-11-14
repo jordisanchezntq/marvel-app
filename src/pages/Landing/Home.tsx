@@ -1,9 +1,12 @@
 import {
+  IonCol,
   IonContent,
   IonHeader,
+  IonItemDivider,
   IonPage,
   IonRefresher,
   IonRefresherContent,
+  IonRouterLink,
   IonRow,
   IonSelect,
   IonSelectOption,
@@ -91,6 +94,19 @@ const Home: React.FC = () => {
                 .map((foundCharacter) => (
                   <CharacterComponent key={foundCharacter.id} character={foundCharacter} />
                 ))}
+          </IonRow>
+
+          <IonItemDivider></IonItemDivider>
+
+          <IonRow className='ion-padding-top ion-text-center'>
+            <IonCol size='12'>
+              <IonRouterLink
+              color={'danger'}
+              href='/login'
+              >
+                Accede al Login
+              </IonRouterLink>
+            </IonCol>
           </IonRow>
 
         </div>

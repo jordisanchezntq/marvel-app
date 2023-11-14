@@ -1,0 +1,22 @@
+@import './../../packages/scss/app.scss';
+
+.loginTitle {
+    color: var(--ion-color-danger);
+}
+
+.loginInput {
+    $self: &;
+    position: relative;
+    width: 100%;
+
+    &__label {
+        font-family: var(--font-primary);
+        position: absolute;
+        left: 16px + 1px;
+        top: 16px + 1px;
+        width: calc(100% - 34px);
+        color: var(--c-color-brand-four-dark);
+        transition: top 200ms ease-in-out, font-size 200ms ease-in-out, line-height 200ms ease-in-out;
+        pointer-events: none;
+    }
+}
